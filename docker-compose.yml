@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mate-desktop-lmu:
+    security_opt:
+    - seccomp:unconfined
+    shm_size: "2gb"
+    environment:
+    - PASSWORD=mate
+    - USER=mate
+    cap_add:
+    - SYS_PTRACE
+    image: ubuntu-mate-desktop-001:impish
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+    - 4000:4000/tcp
