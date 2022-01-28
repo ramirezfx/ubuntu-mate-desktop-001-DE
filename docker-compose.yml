@@ -9,7 +9,7 @@ services:
     - USER=mate
     cap_add:
     - SYS_PTRACE
-    image: ubuntu-mate-desktop-001:impish
+    image: ramirezfx/ubuntu-mate-desktop-001-de:impish
     restart: always
     stdin_open: true
     tty: true
