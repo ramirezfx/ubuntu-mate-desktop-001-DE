@@ -25,7 +25,7 @@ RUN apt-get update && \
       libxv1 \
       sudo \
       lsb-release \
-      curl sudo kmymoney gimp breeze wget pluma meld filezilla mate-calc atril pulseaudio vim
+      curl sudo kmymoney gimp breeze wget pluma meld filezilla mate-calc atril pulseaudio vim firefox firefox-locale-de
 
 RUN curl -fSL "https://download.nomachine.com/download/7.7/Linux/nomachine_7.7.4_1_amd64.deb" -o nomachine.deb \
 # && echo "${NOMACHINE_MD5} *nomachine.deb" | md5sum -c - \
