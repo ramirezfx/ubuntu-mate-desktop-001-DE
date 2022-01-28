@@ -3,7 +3,7 @@
 #    2. Ubuntu 18.04 LTS (bionic), 20.04 LTS (focal), 20.10 (groovy), 21.04 (hirsute), 21.10 (impish) and upcoming 22.04 LTS (jammy) are fully-functional while using systemd.
 
 ARG VER=impish
-FROM ramirezfx/ubuntu-mate-iso:impish
+FROM ramirezfx/ubuntu-mate-iso:$VER
 ENV SHELL=/bin/bash
 
 RUN bash -c 'if test -n "$http_proxy"; then echo "Acquire::http::proxy \"$http_proxy\";" > /etc/apt/apt.conf.d/99proxy; else echo "Using direct network connection."; fi'
